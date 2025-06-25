@@ -22,6 +22,7 @@ const GoogleReviews =()=> {
             <p>{r.text}</p>
             <p className="text-sm text-gray-500">{r.relative_time_description}</p>
           </div>
+
         ))
       )}
     </div>

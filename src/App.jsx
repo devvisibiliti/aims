@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Slider from './components/Slider';
 import ProductTabs from './components/ProductTabs';
 import Home from './pages/Home';
+import CCTV from './pages/Cctv';
 // import WhyChooseUs from './components/WhyChooseUs';
 // import Testimonials from './components/Testimonials';
 // import GoogleReviews from './components/GoogleReviews';
@@ -18,6 +19,7 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/cctv" element={<CCTV />} />
       </Routes>
     </Router>
   );
