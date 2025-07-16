@@ -5,26 +5,26 @@ import Footer from '../components/Footer';
 const Banner = () => {
   return (
     <div style={{
-      backgroundImage: 'url("/path-to-your-banner-image.jpg")',
+      backgroundImage: 'url("/assets/images/banners/CCTVBanner.jpeg")',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
-      height: '300px',
+      height: '500px',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
       color: '#fff',
       textShadow: '2px 2px 4px rgba(0,0,0,0.7)',
     }}>
-      <h1>CCTV Services</h1>
+      <h1 style={{fontWeight:'bolder', fontSize:'50px'}}>CCTV Services</h1>
     </div>
   );
 };
 const Description = () => {
 return (  
     <div style={{ padding: '10px', maxWidth: '900px', margin: 'auto' }}>
-        <h2 style={{ textAlign: 'center', fontSize:'50px', fontWeight:'bolder', paddingBottom:'20px' }}>About Our CCTV Services</h2>
-        <p style={{fontSize:'18px', textAlign: 'justify', lineHeight: '1.6'}}>
-            We provide top-notch CCTV installation and maintenance services to ensure the safety and security of your premises. Our team of experts is equipped with the latest technology to deliver high-quality surveillance solutions tailored to your needs. Whether it's for residential or commercial properties, we have the right solutions to keep you protected 24/7.
+        <h2 style={{ textAlign: 'center', fontSize:'50px', fontWeight:'bolder', paddingBottom:'20px' }}>About Our Software Services</h2>
+        <p style={{ fontSize:'18px', textAlign: 'justify', lineHeight: '1.6'}}>
+            We provide end-to-end software solutions for homes, offices, and institutions. Our offerings include licensed installations of Windows 10/11, MS Office 365, antivirus programs (Quick Heal, Kaspersky, Norton), and design software like Adobe, AutoCAD, and CorelDRAW. We ensure proper installation, activation, and update configuration for smooth, secure operation. Whether you're setting up new systems or upgrading old ones, we help select the right software for your needs. We also assist with cloud tools like Google Workspace and offer custom CRM, accounting, and utility installations. All services are genuine and supported by our professional team in Chennai.
         </p>
         {/* <p style={{fontFamily:'poppins', fontSize:'20px', textAlign: 'justify', lineHeight: '1.6'}}>
            
@@ -39,40 +39,47 @@ return (
 const cameraData = [
     {
         id: 1,
-        title: '📷 Table Top CCTV',
-        description: 'Table Top CCTV cameras are compact and stylish, ideal for desks, reception counters, or shelf-mounted indoor surveillance. They’re perfect for homes and small offices that want quick plug-and-play security.',
-        imageUrl: '/assets/images/cctvpage/TableTopCCTV.png',
+        title: '🖥️ Operating Systems (OS)',
+        description: 'We provide licensed operating systems including: Windows 10 / 11 (Home & Pro)Linux (Ubuntu, Red Hat, CentOS)MacOS support for Apple systems Secure, fast, and regularly updated for personal, business, or institutional use.',
+        imageUrl: '/assets/images/software/OperatingSystemsOS.jpeg',
     },
     {
         id: 2,
-        title: '📡 Wireless CCTV',
-        description: 'Wireless CCTV cameras offer easy installation without messy wiring. With encrypted connectivity, they are ideal for flexible placement across homes and small businesses.',
-        imageUrl: '/assets/images/cctvpage/WirelessCCTV.png',
+        title: '📦 Productivity Software',
+        description: 'Boost efficiency with industry-standard tools like: Microsoft Office 365 (Word, Excel, PowerPoint, Outlook)Google Workspace Setup (Docs, Sheets, Gmail, Meet) LibreOffice for open-source users Perfect for professionals, students, and business users.',
+        imageUrl: '/assets/images/software/ProductivitySoftware.jpeg',
     },
     {
         id: 3,
-        title: '🌐 WiFi CCTV',
-        description: 'WiFi-enabled CCTV systems ensure seamless live monitoring from mobile apps, enabling users to watch their property from anywhere—perfect for modern, tech-savvy households and startups.',
-        imageUrl: '/assets/images/cctvpage/WiFiCCTV.png',
+        title: '🛡️ Antivirus & Security Software',
+        description: 'Protect your system with genuine security solutions: Quick Heal, Kaspersky, Norton, Bitdefender Firewall configuration & ransomware protection We ensure real-time scanning, updates, and license activation.',
+        imageUrl: '/assets/images/software/AntivirusSecuritySoftware.jpeg',
     },
-    {
+     {
         id: 4,
-        title: '🔄 Regular CCTV',
-        description: 'Traditional wired CCTV setups are reliable and cost-effective for continuous recording and high-security requirements in both residential and commercial spaces.',
-        imageUrl: '/assets/images/cctvpage/RegularCCTV.png',
+        title: '🎨 Design & Editing Software',
+        description: 'For creators and professionals: Adobe Photoshop, Illustrator, Premiere Pro CorelDRAW, AutoCAD, SketchUp, Final Cut Pro Licensed installation and support for high-performance machines.',
+        imageUrl: '/assets/images/software/DesignEditingSoftware.jpeg',
     },
-    {
+     {
         id: 5,
-        title: '🏢 Commercial CCTV',
-        description: 'For large-scale businesses, commercial CCTV systems offer advanced monitoring, storage, and motion detection features to protect assets, employees, and premises 24/7.',
-        imageUrl: '/assets/images/cctvpage/CommercialCCTV.png',
+        title: '🧰 Utility & Maintenance Software',
+        description: 'Ensure smooth operation with: Disk cleanup tools Driver update software Backup & recovery systems (Acronis, Macrium Reflect) Ideal for long-term system health and optimization.',
+        imageUrl: '/assets/images/software/UtilityMaintenanceSoftware.jpeg',
     },
-    {
+     {
         id: 6,
-        title: '🏠 CCTV for Home Needs',
-        description: 'Home security starts with smart CCTV. From baby monitoring to front door surveillance, our systems are affordable, discreet, and accessible via smartphones.',
-        imageUrl: '/assets/images/cctvpage/HomeNeeds.png',
+        title: '🔧 Custom Software Installation',
+        description: 'We provide setup, activation, and configuration for: Accounting software (Tally Prime, Zoho Books) HR & Payroll systems CRM/ERP applications Tailored for your business size and workflow.',
+        imageUrl: '/assets/images/software/CustomSoftwareInstallation.jpeg',
     },
+     {
+        id: 7,
+        title: '🧑‍💼 Licensed Software Consulting & Support',
+        description: 'Confused about what to buy? Our team helps you choose the right software license, manage activation keys, renewals, and provide post-installation tech support.',
+        imageUrl: '/assets/images/software/LicensedSoftwareConsultingSupport.jpeg',
+    },
+    
 ];
 
 const CameraCard = ({ title, description, imageUrl }) => {
@@ -135,7 +142,7 @@ const CameraGrid = () => {
                 `}
             </style>
             <h2 style={{ textAlign: 'center', marginBottom: '30px', fontSize:'50px', fontWeight:'bolder' }}>
-                Types of CCTV Cameras We Provide
+                Types of Software Services We Provide
             </h2>
             <div
                 className="camera-grid"
@@ -159,15 +166,15 @@ const CameraGrid = () => {
 
 
 const productDescription = {
-    title: 'Why Choose Our CCTV Products',
+    title: 'Why Choose Software Products',
     bullets: [
-        '✅ High-Resolution Video QualityEnjoy crystal-clear footage with sharp image detail.Ideal for identifying faces, license plates, and movements.',
-        '✅ 24/7 Surveillance Capability Non-stop monitoring to keep your premises secure.Protects day and night with continuous recording.',
-        '✅ Remote Monitoring via Mobile App Access live and recorded footage from anywhere.Stay connected to your security through your phone.',
-        '✅ Weatherproof and Durable Design Built to withstand rain, heat, and dust. Perfect for both indoor and outdoor installations.',
-        '✅ Easy Installation and Setup Plug-and-play systems with minimal wiring required. Quick setup without disrupting your space',
+        '✅Genuine & Licensed Software Only We provide 100% original software with activation support — including Windows OS, Microsoft Office, antivirus, and design tools.',
+        '✅Complete Setup & Configuration From installation to updates and security settings, we ensure your software runs smoothly and safely from day one.',
+        '✅System Security & Data Protection We install firewalls, antivirus, and malware protection to safeguard your system from cyber threats and data loss.',
+        '✅Business & Productivity Software Need Tally, AutoCAD, Adobe Suite, or Google Workspace? We’ve got it all — ready for home, business, or institutional use.',
+        '✅Tailored Software Packages Whether you are a student, startup, or large company, we install software that fits your needs and device capacity.',
     ],
-    imageUrl: '/assets/images/cctvpage/whychoose.png', // replace with your image path
+    imageUrl: '/assets/images/whychoose/Computersystemsoftware.jpeg', // replace with your image path
 };
 
 const ProductsOffer = () => {
@@ -339,7 +346,7 @@ const Button =()=> {
 
 
 
-const CCTV = () => {
+const Software = () => {
   return (
     <div>
       <Banner />
@@ -354,4 +361,4 @@ const CCTV = () => {
   );
 };
 
-export default CCTV;
+export default Software;

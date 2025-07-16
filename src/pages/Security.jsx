@@ -5,26 +5,27 @@ import Footer from '../components/Footer';
 const Banner = () => {
   return (
     <div style={{
-      backgroundImage: 'url("/path-to-your-banner-image.jpg")',
+      backgroundImage: 'url("/assets/images/banners/SecuritysystemBanner.jpeg")',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
-      height: '300px',
+      height: '500px',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
       color: '#fff',
       textShadow: '2px 2px 4px rgba(0,0,0,0.7)',
     }}>
-      <h1>CCTV Services</h1>
+      <h1 style={{fontWeight:'bolder', fontSize:'50px'}}>Security Services</h1>
     </div>
   );
 };
 const Description = () => {
 return (  
     <div style={{ padding: '10px', maxWidth: '900px', margin: 'auto' }}>
-        <h2 style={{ textAlign: 'center', fontSize:'50px', fontWeight:'bolder', paddingBottom:'20px' }}>About Our CCTV Services</h2>
-        <p style={{fontSize:'18px', textAlign: 'justify', lineHeight: '1.6'}}>
-            We provide top-notch CCTV installation and maintenance services to ensure the safety and security of your premises. Our team of experts is equipped with the latest technology to deliver high-quality surveillance solutions tailored to your needs. Whether it's for residential or commercial properties, we have the right solutions to keep you protected 24/7.
+        <h2 style={{ textAlign: 'center', fontSize:'50px', fontWeight:'bolder', paddingBottom:'20px' }}>About Our Security Services</h2>
+        <p style={{fontFamily:'poppins', fontSize:'20px', textAlign: 'justify', lineHeight: '1.6'}}>
+            Secure what matters most with our complete range of security systems for residential and commercial use. From smart door locks and access control to fire alarms and 24/7 surveillance, we provide fully customized setups. For homes, we offer discreet wireless alarms, door/window sensors, and app-controlled cameras. For businesses, our solutions include biometric access control, CCTV networks, fire detection units, and motion-based alert systems. Every installation is backed by expert consultation, quality equipment, and responsive support. Whether you're protecting your family or your workspace, our security systems in Chennai deliver the reliability and safety you need every day.
+            
         </p>
         {/* <p style={{fontFamily:'poppins', fontSize:'20px', textAlign: 'justify', lineHeight: '1.6'}}>
            
@@ -39,40 +40,65 @@ return (
 const cameraData = [
     {
         id: 1,
-        title: '📷 Table Top CCTV',
-        description: 'Table Top CCTV cameras are compact and stylish, ideal for desks, reception counters, or shelf-mounted indoor surveillance. They’re perfect for homes and small offices that want quick plug-and-play security.',
-        imageUrl: '/assets/images/cctvpage/TableTopCCTV.png',
+        title: '🛡️ Security System (Commercial/Home-Based)',
+        description: 'Our security systems are tailored for both commercial buildings and homes. Whether you need 24/7 monitoring, integrated smart tech, or physical security upgrades, we ensure total protection and peace of mind.',
+        imageUrl: '/assets/images/security/SecuritySystemCommercialHomeBased.jpeg',
     },
     {
         id: 2,
-        title: '📡 Wireless CCTV',
-        description: 'Wireless CCTV cameras offer easy installation without messy wiring. With encrypted connectivity, they are ideal for flexible placement across homes and small businesses.',
-        imageUrl: '/assets/images/cctvpage/WirelessCCTV.png',
+        title: '🔐 Door Locks',
+        description: 'Upgrade your entry points with advanced door locks—digital, biometric, or RFID-enabled. Our solutions prevent unauthorized access and give you full control from anywhere.',
+        imageUrl: '/assets/images/security/DoorLocks.jpeg',
     },
     {
         id: 3,
-        title: '🌐 WiFi CCTV',
-        description: 'WiFi-enabled CCTV systems ensure seamless live monitoring from mobile apps, enabling users to watch their property from anywhere—perfect for modern, tech-savvy households and startups.',
-        imageUrl: '/assets/images/cctvpage/WiFiCCTV.png',
+        title: '🚪 Door Needs',
+        description: 'We provide heavy-duty doors, smart access panels, and reinforced frames suited for both aesthetic appeal and security-grade protection in homes and commercial spaces.',
+        imageUrl: '/assets/images/security/DoorNeeds.jpeg',
     },
     {
         id: 4,
-        title: '🔄 Regular CCTV',
-        description: 'Traditional wired CCTV setups are reliable and cost-effective for continuous recording and high-security requirements in both residential and commercial spaces.',
-        imageUrl: '/assets/images/cctvpage/RegularCCTV.png',
+        title: '🏢 Commercial Needs',
+        description: 'From multi-level access control to centralized surveillance, our commercial security systems safeguard offices, showrooms, warehouses, and institutions with precision and reliability.',
+        imageUrl: '/assets/images/security/CommercialNeeds.jpeg',
     },
     {
         id: 5,
-        title: '🏢 Commercial CCTV',
-        description: 'For large-scale businesses, commercial CCTV systems offer advanced monitoring, storage, and motion detection features to protect assets, employees, and premises 24/7.',
-        imageUrl: '/assets/images/cctvpage/CommercialCCTV.png',
+        title: '🧰 Lockers',
+        description: 'Protect your valuables with tamper-proof lockers for both homes and offices. Fire-resistant, password-protected, and custom-sized options are available for personal or professional use.',
+        imageUrl: '/assets/images/security/Lockers.jpeg',
     },
     {
         id: 6,
-        title: '🏠 CCTV for Home Needs',
-        description: 'Home security starts with smart CCTV. From baby monitoring to front door surveillance, our systems are affordable, discreet, and accessible via smartphones.',
-        imageUrl: '/assets/images/cctvpage/HomeNeeds.png',
+        title: '🔑 Access Control',
+        description: 'Control who enters and when. Our access control systems include biometric scanners, RFID card systems, face recognition, and mobile app integration for smart access.',
+        imageUrl: '/assets/images/security/AccessControl.jpeg',
     },
+    {
+        id: 7,
+        title: '🚨 Alarm System',
+        description: 'Our intrusion and emergency alarm systems alert you instantly of unauthorized activity or danger—backed by real-time monitoring and mobile notifications.',
+        imageUrl: '/assets/images/security/AlarmSystem.jpeg',
+    },
+    {
+        id: 8,
+        title: '🎥 Surveillance',
+        description: 'Monitor every corner with high-resolution CCTV cameras, motion sensors, and night vision—all accessible through cloud-based apps and multi-user platforms.',
+        imageUrl: '/assets/images/security/Surveillance.jpeg',
+    },
+    {
+        id: 9,
+        title: '🚪💨 Door & Window Alarm System',
+        description: 'Stay alert with sensors that detect door or window breaches. Perfect for ground floors, balconies, and entry points in both residential and commercial areas.',
+        imageUrl: '/assets/images/security/DoorWindowAlarmSystem.jpeg',
+    },
+    {
+        id: 10,
+        title: '🔥 Fire Detection',
+        description: 'Protect lives and assets with early fire detection systems. We offer smoke detectors, heat sensors, and automated sprinkler alerts for total fire safety compliance.',
+        imageUrl: '/assets/images/security/FireDetectior.jpeg',
+    },
+    
 ];
 
 const CameraCard = ({ title, description, imageUrl }) => {
@@ -135,7 +161,7 @@ const CameraGrid = () => {
                 `}
             </style>
             <h2 style={{ textAlign: 'center', marginBottom: '30px', fontSize:'50px', fontWeight:'bolder' }}>
-                Types of CCTV Cameras We Provide
+                Types of Security Services We Provide
             </h2>
             <div
                 className="camera-grid"
@@ -159,15 +185,15 @@ const CameraGrid = () => {
 
 
 const productDescription = {
-    title: 'Why Choose Our CCTV Products',
+    title: 'Why Choose Our Security Systems',
     bullets: [
-        '✅ High-Resolution Video QualityEnjoy crystal-clear footage with sharp image detail.Ideal for identifying faces, license plates, and movements.',
-        '✅ 24/7 Surveillance Capability Non-stop monitoring to keep your premises secure.Protects day and night with continuous recording.',
-        '✅ Remote Monitoring via Mobile App Access live and recorded footage from anywhere.Stay connected to your security through your phone.',
-        '✅ Weatherproof and Durable Design Built to withstand rain, heat, and dust. Perfect for both indoor and outdoor installations.',
-        '✅ Easy Installation and Setup Plug-and-play systems with minimal wiring required. Quick setup without disrupting your space',
+        '✅ Comprehensive Protection We integrate CCTV, smart locks, access control, alarms, and fire detection into one seamless security ecosystem.',
+        '✅ Every installation is custom-designed—discreet wireless kits for homes, enterprise-grade networks for offices, factories, and retail outlets.',
+        '✅ Our technicians hold industry certifications and follow IS/IEC safety standards, ensuring accurate setup and maximum reliability.',
+        '✅ Enjoy round-the-clock surveillance with real-time mobile alerts plus rapid on-site assistance anywhere in Chennai.',
+        '✅ We deploy AI motion detection, biometric access, and cloud-based storage—scalable for tomorrow’s security demands.',
     ],
-    imageUrl: '/assets/images/cctvpage/whychoose.png', // replace with your image path
+    imageUrl: '/assets/images/whychoose/Securitysystem.jpeg', // replace with your image path
 };
 
 const ProductsOffer = () => {
@@ -339,7 +365,7 @@ const Button =()=> {
 
 
 
-const CCTV = () => {
+const Security = () => {
   return (
     <div>
       <Banner />
@@ -354,4 +380,4 @@ const CCTV = () => {
   );
 };
 
-export default CCTV;
+export default Security;

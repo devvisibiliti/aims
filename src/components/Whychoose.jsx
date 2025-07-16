@@ -27,26 +27,32 @@ const imgStyle = {
     width: "90%",
     borderRadius: "12px",
     objectFit: "cover",
-    maxWidth: "350px",
+    maxWidth: "450px",
     minWidth: "200px",
 };
 
-const WhyChoose = () => {
+const WhyChooseHome = () => {
     return (
         <section style={sectionStyle}>
             <div style={leftStyle}>
                 <img
-                    src="https://via.placeholder.com/350x250"
+                    src="/assets/images/whychoose/Networking.jpeg"
                     alt="Why Choose Us"
                     style={imgStyle}
                 />
             </div>
             <div style={rightStyle}>
-                <h2>Why Choose Us</h2>
-                <p>
-                    We provide top-notch services with a focus on quality, reliability, and customer satisfaction.
-                    Our experienced team ensures that you get the best solutions tailored to your needs.
-                </p>
+                <h2 style={{textAlign:'center', fontWeight:'bolder', fontSize:'50px'}}>Why Choose Us</h2>
+                
+                    <ul>
+                    <li style={{padding:'10px'}}>We are your trusted partner for smart, secure, and future-ready technology solutions. Whether you’re upgrading your home with CCTV cameras, setting up a secure office network, or installing electrical systems in a new building, we offer complete, end-to-end services tailored to your needs.</li>
+                    <li style={{padding:'10px'}}>What sets us apart is our ability to handle multiple services under one roof — including security systems, networking, electrical works, and computer hardware/software solutions. Our team of certified professionals brings years of experience, delivering high-quality installations and reliable tech support with a strong focus on safety, performance, and customer satisfaction.</li>
+                    <li style={{padding:'10px'}}>We use only genuine, branded products and ensure every service is carried out with attention to detail and care. From consultation to execution, we follow a transparent and customer-first approach with clear communication, affordable pricing, and post-service support.</li>
+                    <li style={{padding:'10px'}}>Whether you're a homeowner, business owner, or property developer, choosing us means choosing peace of mind, professionalism, and a long-term tech partner you can rely on.</li>
+                </ul>
+
+                
+                
             </div>
             <style>
                 {`
@@ -70,4 +76,4 @@ const WhyChoose = () => {
     );
 };
 
-export default WhyChoose;
+export default WhyChooseHome;

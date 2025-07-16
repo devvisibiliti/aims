@@ -5,26 +5,26 @@ import Footer from '../components/Footer';
 const Banner = () => {
   return (
     <div style={{
-      backgroundImage: 'url("/path-to-your-banner-image.jpg")',
+      backgroundImage: 'url("/assets/images/banners/NetworkingBanner.jpeg")',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
-      height: '300px',
+      height: '500px',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
       color: '#fff',
       textShadow: '2px 2px 4px rgba(0,0,0,0.7)',
     }}>
-      <h1>CCTV Services</h1>
+      <h1 style={{fontWeight:'bolder', fontSize:'50px'}}>Networking Services</h1>
     </div>
   );
 };
 const Description = () => {
 return (  
     <div style={{ padding: '10px', maxWidth: '900px', margin: 'auto' }}>
-        <h2 style={{ textAlign: 'center', fontSize:'50px', fontWeight:'bolder', paddingBottom:'20px' }}>About Our CCTV Services</h2>
-        <p style={{fontSize:'18px', textAlign: 'justify', lineHeight: '1.6'}}>
-            We provide top-notch CCTV installation and maintenance services to ensure the safety and security of your premises. Our team of experts is equipped with the latest technology to deliver high-quality surveillance solutions tailored to your needs. Whether it's for residential or commercial properties, we have the right solutions to keep you protected 24/7.
+        <h2 style={{ textAlign: 'center', fontSize:'50px', fontWeight:'bolder', paddingBottom:'20px' }}>About Our Networking Services</h2>
+        <p style={{ fontSize:'18px', textAlign: 'justify', lineHeight: '1.6'}}>
+            Our networking services cover everything from home WiFi setup to complex commercial network infrastructures. We offer system networking for servers and devices, high-speed LAN cabling, firewall configuration, router installation, and WiFi range extensions. Whether you're building a smart home or managing a multi-floor office, we ensure fast, secure, and stable internet connections throughout your space. Our technicians handle both wired and wireless systems with professional-grade components. We also provide AMC and troubleshooting support. With service coverage across Chennai, our networking solutions help you stay connected without lag, downtime, or signal loss, no matter your space or scale.
         </p>
         {/* <p style={{fontFamily:'poppins', fontSize:'20px', textAlign: 'justify', lineHeight: '1.6'}}>
            
@@ -39,40 +39,23 @@ return (
 const cameraData = [
     {
         id: 1,
-        title: '📷 Table Top CCTV',
-        description: 'Table Top CCTV cameras are compact and stylish, ideal for desks, reception counters, or shelf-mounted indoor surveillance. They’re perfect for homes and small offices that want quick plug-and-play security.',
-        imageUrl: '/assets/images/cctvpage/TableTopCCTV.png',
+        title: '🌐 System Networking',
+        description: 'System networking forms the backbone of digital communication. It connects servers, switches, and storage devices, enabling secure and fast data transfer. Great for IT systems, it guarantees high uptime and good performance.',
+        imageUrl: '/assets/images/networking/SystemNetworking.jpeg',
     },
     {
         id: 2,
-        title: '📡 Wireless CCTV',
-        description: 'Wireless CCTV cameras offer easy installation without messy wiring. With encrypted connectivity, they are ideal for flexible placement across homes and small businesses.',
-        imageUrl: '/assets/images/cctvpage/WirelessCCTV.png',
+        title: '🏢 Commercial Networking',
+        description: 'Commercial networking solutions are made to grow and work quickly.Whether its a multi-floor office, retail store, or corporate campus, our networks deliver reliable connectivity, firewall protection, and enterprise-level performance.',
+        imageUrl: '/assets/images/networking/HomeBasedNetworking.jpeg',
     },
     {
         id: 3,
-        title: '🌐 WiFi CCTV',
-        description: 'WiFi-enabled CCTV systems ensure seamless live monitoring from mobile apps, enabling users to watch their property from anywhere—perfect for modern, tech-savvy households and startups.',
-        imageUrl: '/assets/images/cctvpage/WiFiCCTV.png',
+        title: '🏠 Home-Based Networking',
+        description: 'Home networking setups are perfect for smart homes, remote work, and online entertainment. From WiFi routers to mesh systems, we offer seamless internet access across every room with top-tier security.',
+        imageUrl: '/assets/images/networking/CommercialNetworking.jpeg',
     },
-    {
-        id: 4,
-        title: '🔄 Regular CCTV',
-        description: 'Traditional wired CCTV setups are reliable and cost-effective for continuous recording and high-security requirements in both residential and commercial spaces.',
-        imageUrl: '/assets/images/cctvpage/RegularCCTV.png',
-    },
-    {
-        id: 5,
-        title: '🏢 Commercial CCTV',
-        description: 'For large-scale businesses, commercial CCTV systems offer advanced monitoring, storage, and motion detection features to protect assets, employees, and premises 24/7.',
-        imageUrl: '/assets/images/cctvpage/CommercialCCTV.png',
-    },
-    {
-        id: 6,
-        title: '🏠 CCTV for Home Needs',
-        description: 'Home security starts with smart CCTV. From baby monitoring to front door surveillance, our systems are affordable, discreet, and accessible via smartphones.',
-        imageUrl: '/assets/images/cctvpage/HomeNeeds.png',
-    },
+    
 ];
 
 const CameraCard = ({ title, description, imageUrl }) => {
@@ -135,7 +118,7 @@ const CameraGrid = () => {
                 `}
             </style>
             <h2 style={{ textAlign: 'center', marginBottom: '30px', fontSize:'50px', fontWeight:'bolder' }}>
-                Types of CCTV Cameras We Provide
+                Types of Networking Services We Provide
             </h2>
             <div
                 className="camera-grid"
@@ -159,15 +142,15 @@ const CameraGrid = () => {
 
 
 const productDescription = {
-    title: 'Why Choose Our CCTV Products',
+    title: 'Why Choose Networking Products',
     bullets: [
-        '✅ High-Resolution Video QualityEnjoy crystal-clear footage with sharp image detail.Ideal for identifying faces, license plates, and movements.',
-        '✅ 24/7 Surveillance Capability Non-stop monitoring to keep your premises secure.Protects day and night with continuous recording.',
-        '✅ Remote Monitoring via Mobile App Access live and recorded footage from anywhere.Stay connected to your security through your phone.',
-        '✅ Weatherproof and Durable Design Built to withstand rain, heat, and dust. Perfect for both indoor and outdoor installations.',
-        '✅ Easy Installation and Setup Plug-and-play systems with minimal wiring required. Quick setup without disrupting your space',
+        '✅From WiFi setup to enterprise-grade LAN networks, we handle everything—installation, configuration, and maintenance.',
+        '✅Our skilled professionals ensure secure, high-speed, and structured networking using industry-best practices.',
+        '✅We tailor networking systems to fit your home layout or business infrastructure, ensuring seamless connectivity.',
+        '✅We use trusted brands and durable equipment for routers, switches, cabling, and accessories.',
+        '✅Timely setup without compromising quality—perfect for homes, startups, offices, and institutions.',
     ],
-    imageUrl: '/assets/images/cctvpage/whychoose.png', // replace with your image path
+    imageUrl: '/assets/images/whychoose/Networking.jpeg', // replace with your image path
 };
 
 const ProductsOffer = () => {
@@ -339,7 +322,7 @@ const Button =()=> {
 
 
 
-const CCTV = () => {
+const Networking = () => {
   return (
     <div>
       <Banner />
@@ -354,4 +337,4 @@ const CCTV = () => {
   );
 };
 
-export default CCTV;
+export default Networking;

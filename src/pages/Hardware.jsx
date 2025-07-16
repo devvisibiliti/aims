@@ -5,26 +5,26 @@ import Footer from '../components/Footer';
 const Banner = () => {
   return (
     <div style={{
-      backgroundImage: 'url("/path-to-your-banner-image.jpg")',
+      backgroundImage: 'url("/assets/images/banners/ComputersystemHardwareBanner.jpeg")',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
-      height: '300px',
+      height: '500px',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
       color: '#fff',
       textShadow: '2px 2px 4px rgba(0,0,0,0.7)',
     }}>
-      <h1>CCTV Services</h1>
+      <h1 style={{fontWeight:'bolder', fontSize:'50px'}}>Hardware Services</h1>
     </div>
   );
 };
 const Description = () => {
 return (  
     <div style={{ padding: '10px', maxWidth: '900px', margin: 'auto' }}>
-        <h2 style={{ textAlign: 'center', fontSize:'50px', fontWeight:'bolder', paddingBottom:'20px' }}>About Our CCTV Services</h2>
-        <p style={{fontSize:'18px', textAlign: 'justify', lineHeight: '1.6'}}>
-            We provide top-notch CCTV installation and maintenance services to ensure the safety and security of your premises. Our team of experts is equipped with the latest technology to deliver high-quality surveillance solutions tailored to your needs. Whether it's for residential or commercial properties, we have the right solutions to keep you protected 24/7.
+        <h2 style={{ textAlign: 'center', fontSize:'50px', fontWeight:'bolder', paddingBottom:'20px' }}>About Our Hardware Services</h2>
+        <p style={{ fontSize:'18px', textAlign: 'justify', lineHeight: '1.6'}}>
+            Get reliable, high-performance computer hardware solutions tailored to your needs. We supply and install desktops, motherboards, CPUs (Intel/AMD), RAM, SSDs, GPUs, power supplies, and more. Whether you're upgrading a gaming PC, building a business workstation, or repairing an existing system, our experts recommend and install components that fit your purpose and budget. We stock branded parts with warranty and offer complete setup, testing, and performance optimization. Need support? Our service extends to troubleshooting, replacements, and accessories like monitors, keyboards, and UPS systems. Choose us for quality computer hardware services in Chennai that keep you running without interruptions.
         </p>
         {/* <p style={{fontFamily:'poppins', fontSize:'20px', textAlign: 'justify', lineHeight: '1.6'}}>
            
@@ -39,40 +39,65 @@ return (
 const cameraData = [
     {
         id: 1,
-        title: '📷 Table Top CCTV',
-        description: 'Table Top CCTV cameras are compact and stylish, ideal for desks, reception counters, or shelf-mounted indoor surveillance. They’re perfect for homes and small offices that want quick plug-and-play security.',
-        imageUrl: '/assets/images/cctvpage/TableTopCCTV.png',
+        title: '🧠 Motherboards',
+        description: 'The backbone of every computer, motherboards connect all hardware components. We provide compatible boards for Intel and AMD systems, ideal for gaming, business, or home use.',
+        imageUrl: '/assets/images/hardwares/Motherboards.jpeg',
     },
     {
         id: 2,
-        title: '📡 Wireless CCTV',
-        description: 'Wireless CCTV cameras offer easy installation without messy wiring. With encrypted connectivity, they are ideal for flexible placement across homes and small businesses.',
-        imageUrl: '/assets/images/cctvpage/WirelessCCTV.png',
+        title: '⚙️ Processors (CPU)',
+        description: 'Choose from top brands like Intel Core i3/i5/i7 and AMD Ryzen for reliable computing power. Perfect for multitasking, office work, and high-performance tasks.',
+        imageUrl: '/assets/images/hardwares/ProcessorsCPU.jpeg',
     },
     {
         id: 3,
-        title: '🌐 WiFi CCTV',
-        description: 'WiFi-enabled CCTV systems ensure seamless live monitoring from mobile apps, enabling users to watch their property from anywhere—perfect for modern, tech-savvy households and startups.',
-        imageUrl: '/assets/images/cctvpage/WiFiCCTV.png',
+        title: '💾 RAM (Memory)',
+        description: 'Speed up your PC with DDR4/DDR5 RAM from 4GB to 64GB. Boost performance for gaming, editing, and everyday operations with trusted brands like Corsair, Kingston, and Crucial.',
+        imageUrl: '/assets/images/hardwares/RAMMemory.jpeg',
     },
     {
         id: 4,
-        title: '🔄 Regular CCTV',
-        description: 'Traditional wired CCTV setups are reliable and cost-effective for continuous recording and high-security requirements in both residential and commercial spaces.',
-        imageUrl: '/assets/images/cctvpage/RegularCCTV.png',
+        title: '📀 Hard Drives (HDD & SSD)',
+        description: 'Store more, load faster. We offer high-capacity HDDs for storage and fast SSDs (SATA & NVMe) for quick boot times and file access.',
+        imageUrl: '/assets/images/hardwares/HardDrivesHDDSSD.jpeg',
     },
     {
         id: 5,
-        title: '🏢 Commercial CCTV',
-        description: 'For large-scale businesses, commercial CCTV systems offer advanced monitoring, storage, and motion detection features to protect assets, employees, and premises 24/7.',
-        imageUrl: '/assets/images/cctvpage/CommercialCCTV.png',
+        title: '🔋 Power Supply (SMPS)',
+        description: 'Stable power is crucial. We provide 450W–850W SMPS units with overvoltage and surge protection to ensure consistent performance and long hardware life.',
+        imageUrl: '/assets/images/hardwares/PowerSupplySMP.jpeg',
     },
     {
         id: 6,
-        title: '🏠 CCTV for Home Needs',
-        description: 'Home security starts with smart CCTV. From baby monitoring to front door surveillance, our systems are affordable, discreet, and accessible via smartphones.',
-        imageUrl: '/assets/images/cctvpage/HomeNeeds.png',
+        title: '🖥️ Monitors',
+        description: 'From 19-inch LED screens to 32-inch curved 4K displays, we have monitors for coding, gaming, design, and day-to-day office tasks.',
+        imageUrl: '/assets/images/hardwares/MonitorsCPU.jpeg',
     },
+    {
+        id: 7,
+        title: '⌨️ Keyboard & Mouse',
+        description: 'Ergonomic, wireless, mechanical, or RGB—we offer complete input device kits for home, gaming, or professional setups.',
+        imageUrl: '/assets/images/hardwares/KeyboardMouse.jpeg',
+    },
+    {
+        id: 8,
+        title: '🎮 Graphic Cards (GPU)',
+        description: 'Get high-performance GPUs for gaming, video editing, 3D rendering, or AI. We stock NVIDIA and AMD cards suitable for all budgets.',
+        imageUrl: '/assets/images/hardwares/GraphicCardsGPU.jpeg',
+    },
+     {
+        id: 9,
+        title: '❄️ Cooling Fans & Heat Sinks',
+        description: 'Prevent overheating with efficient cooling systems—case fans, CPU coolers, and liquid cooling options for high-end rigs.',
+        imageUrl: '/assets/images/hardwares/CoolingFansHeatSink.jpeg',
+    },
+    {
+        id: 10,
+        title: '🔌 UPS & Power Backup',
+        description: 'Protect your system from power cuts with branded UPS systems (600VA–2KVA) for smooth operation and data protection.',
+        imageUrl: '/assets/images/hardwares/UPSPowerBackup.jpeg',
+    },
+    
 ];
 
 const CameraCard = ({ title, description, imageUrl }) => {
@@ -135,7 +160,7 @@ const CameraGrid = () => {
                 `}
             </style>
             <h2 style={{ textAlign: 'center', marginBottom: '30px', fontSize:'50px', fontWeight:'bolder' }}>
-                Types of CCTV Cameras We Provide
+                Types of Hardware Services We Provide
             </h2>
             <div
                 className="camera-grid"
@@ -159,15 +184,15 @@ const CameraGrid = () => {
 
 
 const productDescription = {
-    title: 'Why Choose Our CCTV Products',
+    title: 'Why Choose Our Hardware Products',
     bullets: [
-        '✅ High-Resolution Video QualityEnjoy crystal-clear footage with sharp image detail.Ideal for identifying faces, license plates, and movements.',
-        '✅ 24/7 Surveillance Capability Non-stop monitoring to keep your premises secure.Protects day and night with continuous recording.',
-        '✅ Remote Monitoring via Mobile App Access live and recorded footage from anywhere.Stay connected to your security through your phone.',
-        '✅ Weatherproof and Durable Design Built to withstand rain, heat, and dust. Perfect for both indoor and outdoor installations.',
-        '✅ Easy Installation and Setup Plug-and-play systems with minimal wiring required. Quick setup without disrupting your space',
+        '✅From motherboards and processors to SSDs, RAM, GPUs, and monitors—we provide everything you need for desktops and workstations.',
+        '✅Whether you are a gamer, designer, or business owner, we build systems that match your performance and budget goals.',
+        '✅Genuine, Branded Components Only We deal with 100% original hardware from top brands like Intel, AMD, Corsair, Kingston, WD, and ASUS—no clones, no compromises.',
+        '✅Our technicians assemble, install, and test every part for compatibility, speed, and stability before delivery.',
+        '✅We not only install but also optimize systems for speed, thermal management, and multitasking.',
     ],
-    imageUrl: '/assets/images/cctvpage/whychoose.png', // replace with your image path
+    imageUrl: '/assets/images/whychoose/ComputersystemHardware.jpeg', // replace with your image path
 };
 
 const ProductsOffer = () => {
@@ -339,7 +364,7 @@ const Button =()=> {
 
 
 
-const CCTV = () => {
+const Hardware = () => {
   return (
     <div>
       <Banner />
@@ -354,4 +379,4 @@ const CCTV = () => {
   );
 };
 
-export default CCTV;
+export default Hardware;

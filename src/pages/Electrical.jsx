@@ -5,26 +5,26 @@ import Footer from '../components/Footer';
 const Banner = () => {
   return (
     <div style={{
-      backgroundImage: 'url("/path-to-your-banner-image.jpg")',
+      backgroundImage: 'url("/assets/images/banners/ElectricalworksBanner.jpeg")',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
-      height: '300px',
+      height: '500px',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
       color: '#fff',
       textShadow: '2px 2px 4px rgba(0,0,0,0.7)',
     }}>
-      <h1>CCTV Services</h1>
+      <h1 style={{fontWeight:'bolder', fontSize:'50px'}}>Electrical Services</h1>
     </div>
   );
 };
 const Description = () => {
 return (  
     <div style={{ padding: '10px', maxWidth: '900px', margin: 'auto' }}>
-        <h2 style={{ textAlign: 'center', fontSize:'50px', fontWeight:'bolder', paddingBottom:'20px' }}>About Our CCTV Services</h2>
-        <p style={{fontSize:'18px', textAlign: 'justify', lineHeight: '1.6'}}>
-            We provide top-notch CCTV installation and maintenance services to ensure the safety and security of your premises. Our team of experts is equipped with the latest technology to deliver high-quality surveillance solutions tailored to your needs. Whether it's for residential or commercial properties, we have the right solutions to keep you protected 24/7.
+        <h2 style={{ textAlign: 'center', fontSize:'50px', fontWeight:'bolder', paddingBottom:'20px' }}>About Our Electrical Services</h2>
+        <p style={{ fontSize:'18px', textAlign: 'justify', lineHeight: '1.6'}}>
+            We provide complete electrical solutions for homes, offices, and industrial spaces in Chennai. Our services include new wiring, rewiring, DB panel setup, earthing, UPS installation, and appliance fitting. Whether you’re constructing a new space or renovating, our certified electricians ensure neat, code-compliant, and future-ready installations. We handle residential switchboard setups, commercial lighting automation, and heavy-load industrial panel work. From ceiling fan installation to transformer connections, no job is too small or complex. We also offer AMC and emergency support. With a focus on safety, durability, and energy efficiency, we power your space with trusted electrical craftsmanship.
         </p>
         {/* <p style={{fontFamily:'poppins', fontSize:'20px', textAlign: 'justify', lineHeight: '1.6'}}>
            
@@ -39,40 +39,53 @@ return (
 const cameraData = [
     {
         id: 1,
-        title: '📷 Table Top CCTV',
-        description: 'Table Top CCTV cameras are compact and stylish, ideal for desks, reception counters, or shelf-mounted indoor surveillance. They’re perfect for homes and small offices that want quick plug-and-play security.',
-        imageUrl: '/assets/images/cctvpage/TableTopCCTV.png',
+        title: '🏠 Residential Electrical Works',
+        description: 'We provide full electrical solutions for homes—wiring, switchboard installation, fan/light fitting, inverter wiring, and DB box setup. Safe, neat, and future-proof electrical systems for modern households.',
+        imageUrl: '/assets/images/electrical/ResidentialElectrialWorks.jpeg',
     },
     {
         id: 2,
-        title: '📡 Wireless CCTV',
-        description: 'Wireless CCTV cameras offer easy installation without messy wiring. With encrypted connectivity, they are ideal for flexible placement across homes and small businesses.',
-        imageUrl: '/assets/images/cctvpage/WirelessCCTV.png',
+        title: '🏢 Commercial Electrical Works',
+        description: 'From retail outlets to office buildings, we handle commercial wiring, lighting automation, UPS setup, and load distribution with high safety and performance standards.',
+        imageUrl: '/assets/images/electrical/CommercialElectricalWorks.jpeg',
     },
     {
         id: 3,
-        title: '🌐 WiFi CCTV',
-        description: 'WiFi-enabled CCTV systems ensure seamless live monitoring from mobile apps, enabling users to watch their property from anywhere—perfect for modern, tech-savvy households and startups.',
-        imageUrl: '/assets/images/cctvpage/WiFiCCTV.png',
+        title: '🏭 Industrial Electrical Services',
+        description: 'Heavy-duty electrical works like HT/LT panel installations, earthing systems, industrial motor connections, and transformer wiring, all handled with expert engineering practices.',
+        imageUrl: '/assets/images/electrical/IndustrialElectricalServices.jpeg',
     },
     {
         id: 4,
-        title: '🔄 Regular CCTV',
-        description: 'Traditional wired CCTV setups are reliable and cost-effective for continuous recording and high-security requirements in both residential and commercial spaces.',
-        imageUrl: '/assets/images/cctvpage/RegularCCTV.png',
+        title: '💡 Lighting & Fitting Installation',
+        description: 'We install ceiling lights, decorative fittings, tube lights, panel lights, LED spotlights, and chandeliers. Interior and exterior lighting done with aesthetic focus and power efficiency.',
+        imageUrl: '/assets/images/electrical/LightingFittingInstallation.jpeg',
     },
     {
         id: 5,
-        title: '🏢 Commercial CCTV',
-        description: 'For large-scale businesses, commercial CCTV systems offer advanced monitoring, storage, and motion detection features to protect assets, employees, and premises 24/7.',
-        imageUrl: '/assets/images/cctvpage/CommercialCCTV.png',
+        title: '🔌 Wiring & Cabling',
+        description: 'New wiring for homes, rewiring for old buildings, structured cabling, LAN wiring, and concealed wiring are done with ISI-standard materials and professional tools.',
+        imageUrl: '/assets/images/electrical/WiringCablins.jpeg',
     },
     {
         id: 6,
-        title: '🏠 CCTV for Home Needs',
-        description: 'Home security starts with smart CCTV. From baby monitoring to front door surveillance, our systems are affordable, discreet, and accessible via smartphones.',
-        imageUrl: '/assets/images/cctvpage/HomeNeeds.png',
+        title: '🧰 Electrical Panel Setup',
+        description: 'We install and maintain main distribution boards, sub-panels, circuit breakers, and RCCBs for residential, commercial, and industrial projects with 100% safety compliance.',
+        imageUrl: '/assets/images/electrical/ElectricalPanelSetup.jpeg',
     },
+    {
+        id: 7,
+        title: '🌩️ Earthing & Surge Protection',
+        description: 'Get solid earthing, lightning arrestors, and surge protectors installed to avoid electrical shocks, damage to appliances, and fire risks.',
+        imageUrl: '/assets/images/electrical/EarthingSurgeProtection.jpeg',
+    },
+    {
+        id: 8,
+        title: '🔧 Electrical Repair & Maintenance',
+        description: 'From short-circuit issues to switch replacements, we provide on-demand troubleshooting, AMC (Annual Maintenance Contracts), and quick repair services.',
+        imageUrl: '/assets/images/electrical/ElectricalRepairMaintenance.jpeg',
+    },
+    
 ];
 
 const CameraCard = ({ title, description, imageUrl }) => {
@@ -135,7 +148,7 @@ const CameraGrid = () => {
                 `}
             </style>
             <h2 style={{ textAlign: 'center', marginBottom: '30px', fontSize:'50px', fontWeight:'bolder' }}>
-                Types of CCTV Cameras We Provide
+                Types of Electrical Services We Provide
             </h2>
             <div
                 className="camera-grid"
@@ -159,15 +172,15 @@ const CameraGrid = () => {
 
 
 const productDescription = {
-    title: 'Why Choose Our CCTV Products',
+    title: 'Why Choose Us for Electrical Works – All Types',
     bullets: [
-        '✅ High-Resolution Video QualityEnjoy crystal-clear footage with sharp image detail.Ideal for identifying faces, license plates, and movements.',
-        '✅ 24/7 Surveillance Capability Non-stop monitoring to keep your premises secure.Protects day and night with continuous recording.',
-        '✅ Remote Monitoring via Mobile App Access live and recorded footage from anywhere.Stay connected to your security through your phone.',
-        '✅ Weatherproof and Durable Design Built to withstand rain, heat, and dust. Perfect for both indoor and outdoor installations.',
-        '✅ Easy Installation and Setup Plug-and-play systems with minimal wiring required. Quick setup without disrupting your space',
+        '✅Certified & Experienced Electricians Our licensed professionals bring years of experience in handling residential, commercial, and industrial electrical projects safely and efficiently.',
+        '✅From wiring, rewiring, and switchboards to DB panels, UPS systems, and earthing—we do it all under one roof.',
+        '✅We strictly follow BIS and IEC safety standards to ensure shock-proof, fire-safe, and long-lasting electrical setups.',
+        '✅We complete projects on schedule with neat, damage-free installations that blend with your space.',
+        '✅Need quick fixes or long-term maintenance? Our team is ready with same-day service and custom AMC plans.',
     ],
-    imageUrl: '/assets/images/cctvpage/whychoose.png', // replace with your image path
+    imageUrl: '/assets/images/whychoose/Electricalworks.jpeg', // replace with your image path
 };
 
 const ProductsOffer = () => {
@@ -339,7 +352,7 @@ const Button =()=> {
 
 
 
-const CCTV = () => {
+const Electrical = () => {
   return (
     <div>
       <Banner />
@@ -354,4 +367,4 @@ const CCTV = () => {
   );
 };
 
-export default CCTV;
+export default Electrical;

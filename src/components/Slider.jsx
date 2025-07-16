@@ -1,28 +1,30 @@
 import React, { useState, useEffect, useRef, memo } from 'react';
 
 const slides = [
-  { id: 1, image: '/images/slide1.jpg', caption: 'Quality Solutions' },
-  { id: 2, image: '/images/slide2.jpg', caption: 'Trusted Partner' },
-  { id: 3, image: '/images/slide3.jpg', caption: 'Innovative Products' },
+  { id: 1, image: '/assets/images/banners/CCTV.jpeg', caption: 'Quality Solutions' },
+  { id: 2, image: '/assets/images/banners/Networking.jpeg', caption: 'Trusted Partner' },
+  { id: 3, image: '/assets/images/banners/Securitysystem.jpeg', caption: 'Innovative Products' },
 ];
 
 const Slide = memo(({ slide, active }) => (
   <div
     className={`absolute inset-0 transition-opacity duration-700 ${
-      active ? 'opacity-100 z-10' : 'opacity-0 z-0'
+      active ? 'opacity-100' : 'opacity-0 z-0'
     }`}
     aria-hidden={!active}
   >
     <img
       src={slide.image}
-      srcSet={`${slide.image}?w=400 400w, ${slide.image}?w=800 800w`}
-      sizes="(max-width: 640px) 400px, 800px"
+      srcSet={`${slide.image}?h=400 400h, ${slide.image}?h=800 800h`}
       alt={slide.caption}
-      className="w-full h-full object-cover"
+      className="w-full object-cover"
+      style={{ height: 700 }}
       draggable={false}
     />
-    <div className="absolute bottom-3 left-3 sm:bottom-5 sm:left-5 text-xs sm:text-xl font-semibold text-white bg-black bg-opacity-50 px-2 py-1 sm:p-2 rounded">
-      {slide.caption}
+    <div className="absolute inset-0 flex items-center justify-center">
+      <span className="text-xs sm:text-xl font-semibold text-white bg-black bg-opacity-50 px-2 py-1 sm:p-2 rounded">
+        {slide.caption}
+      </span>
     </div>
   </div>
 ));
@@ -55,7 +57,8 @@ const Slider = () => {
 
   return (
     <div
-      className="relative w-full h-48 sm:h-64 md:h-96 overflow-hidden rounded-lg shadow-lg select-none"
+      className="relative w-full overflow-hidden rounded-lg shadow-lg select-none"
+      style={{ height: 700 }}
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
       tabIndex={0}

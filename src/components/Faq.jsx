@@ -2,24 +2,24 @@ import React, { useState } from "react";
 
 const faqs = [
     {
-        question: "What is AIMSTech?",
-        answer: "AIMSTech is a platform providing technology solutions and resources for students and professionals.",
+        question: "Which is the best CCTV camera for home use?",
+        answer: "WiFi-enabled CCTV cameras are the best for homes as they allow live monitoring through your smartphone, offer night vision, motion detection, and require no complex wiring.",
     },
     {
-        question: "How can I contact support?",
-        answer: "You can contact support via our contact form or email us at support@aimstech.com.",
+        question: "How much does it cost to install CCTV in Chennai?",
+        answer: "Basic home CCTV installations start from ₹2,500 to ₹7,000 per camera. Commercial and multi-camera setups with DVR/NVR systems can range from ₹15,000 to ₹50,000 depending on features.",
     },
     {
-        question: "Is there a mobile app available?",
-        answer: "Yes, AIMSTech offers a mobile app for both Android and iOS devices.",
+        question: "Who provides electrical wiring services near me?",
+        answer: "We offer certified electrical services across Chennai, including T. Nagar, Kolathur, and surrounding areas. From new wiring to panel installation, we cover all home and commercial needs.",
     },
     {
-        question: "How do I reset my password?",
-        answer: "Click on 'Forgot Password' at the login page and follow the instructions to reset your password.",
+        question: "Where can I get original software installation in Chennai?",
+        answer: "We provide licensed software installations like Windows, MS Office, antivirus, and AutoCAD, including activation and setup, for personal and business systems across Chennai.",
     },
     {
-        question: "Are there any subscription plans?",
-        answer: "Yes, we offer free and premium subscription plans. Visit our pricing page for more details.",
+        question: "How do I set up a WiFi network at home or office?",
+        answer: "We offer complete WiFi network setup including router installation, signal optimization, LAN cabling, and mesh system configuration for homes and businesses in Chennai.",
     },
 ];
 
@@ -31,11 +31,13 @@ const Faq = () => {
     };
 
     return (
+        <div style={{backgroundColor:'#da251d', padding:'50px'}}>
         <div
             style={{
                 display: "flex",
                 flexWrap: "wrap",
                 justifyContent: "center",
+                
                 alignItems: "flex-start",
                 maxWidth: 900,
                 margin: "0 auto",
@@ -47,15 +49,16 @@ const Faq = () => {
                 style={{
                     flex: "1 1 300px",
                     minWidth: "250px",
-                    maxWidth: "45%",
+                    maxWidth: "400px",
                     width: "100%",
+                    height:"400px",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
                 }}
             >
                 <img
-                    src="https://via.placeholder.com/350x350?text=AIMSTech+FAQ"
+                    src="/assets/images/home/FAQ-.jpeg"
                     alt="FAQ Illustration"
                     style={{
                         width: "100%",
@@ -73,9 +76,10 @@ const Faq = () => {
                     minWidth: "250px",
                     maxWidth: "45%",
                     width: "100%",
+                    color:'#ffffffff'
                 }}
             >
-                <h2>Frequently Asked Questions</h2>
+                <h2 style={{fontWeight:'bolder', fontSize:'30px'}}>Frequently Asked Questions</h2>
                 <div>
                     {faqs.map((faq, idx) => (
                         <div key={idx} style={{ borderBottom: "1px solid #ddd", padding: "10px 0" }}>
@@ -97,14 +101,15 @@ const Faq = () => {
                                     marginRight: 10,
                                     transition: "transform 0.2s",
                                     transform: openIndex === idx ? "rotate(90deg)" : "rotate(0deg)",
-                                    display: "inline-block"
+                                    display: "inline-block",
+                                    fontWeight:'bolder', fontSize:'30px'
                                 }}>
                                     ▶
                                 </span>
                                 {faq.question}
                             </button>
                             {openIndex === idx && (
-                                <div style={{ marginTop: 8, color: "#555" }}>
+                                <div style={{ marginTop: 8, color: "#ffffffff" }}>
                                     {faq.answer}
                                 </div>
                             )}
@@ -127,6 +132,7 @@ const Faq = () => {
                 }
                 `}
             </style>
+        </div>
         </div>
     );
 };
