@@ -1,5 +1,6 @@
 // src/components/ProductTabs.jsx
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const products = {
   CCTV: [
@@ -178,12 +179,12 @@ const ProductTabs = () => {
             <img src={image} alt={title} className="w-full h-40 object-cover mb-4 rounded" />
             <h3 className="text-xl font-semibold mb-2">{title}</h3>
             <p className="text-gray-600 mb-4 text-base">{description}</p>
-            <a
+            <Link
               href={link}
               className="mt-auto inline-block bg-red-600 text-white px-4 py-2 rounded hover:bg-blue-700 text-base"
             >
               Learn More
-            </a>
+            </Link>
           </div>
         ))}
       </div>
@@ -191,12 +192,12 @@ const ProductTabs = () => {
       {/* Show only one "Learn More---" link per tab if link1 exists in any product */}
       {products[activeTab].some(p => p.link1) && (
         <div className="mt-6 flex justify-center">
-          <a
+          <Link
             href={products[activeTab].find(p => p.link1)?.link1}
             className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 text-base"
           >
             Learn More
-          </a>
+          </Link>
         </div>
       )}
     </div>
