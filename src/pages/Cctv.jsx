@@ -306,28 +306,28 @@ const WhyChooseUs = () => {
 };
 
 
-const Button =()=> {
-  return (
-    <button
-      style={{
-        display: 'block',
-        margin: '20px auto',
-        padding: '10px 20px',
-        backgroundColor: '#007BFF',
-        color: '#fff',
-        border: 'none',
-        borderRadius: '5px',
-        cursor: 'pointer',
-        fontSize: '16px',
-        transition: 'background-color 0.3s ease',
-      }}
-      onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#0056b3')}
-      onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#007BFF')}
-    >
-      Get a Free Quote
-    </button>
-  );
-}
+// const Button =()=> {
+//   return (
+//     <button
+//       style={{
+//         display: 'block',
+//         margin: '20px auto',
+//         padding: '10px 20px',
+//         backgroundColor: '#007BFF',
+//         color: '#fff',
+//         border: 'none',
+//         borderRadius: '5px',
+//         cursor: 'pointer',
+//         fontSize: '16px',
+//         transition: 'background-color 0.3s ease',
+//       }}
+//       onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#0056b3')}
+//       onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#007BFF')}
+//     >
+//       Get a Free Quote
+//     </button>
+//   );
+// }
 
 
 
@@ -347,7 +347,7 @@ const CCTV = () => {
       <CameraGrid />
       <ProductsOffer />
       <WhyChooseUs />
-      <Button />
+      {/* <Button /> */}
       <Footer />
       {/* Other content for the service page */}
     </div>

@@ -71,7 +71,7 @@ const cameraData = [
         id: 6,
         title: '🖥️ Monitors',
         description: 'From 19-inch LED screens to 32-inch curved 4K displays, we have monitors for coding, gaming, design, and day-to-day office tasks.',
-        imageUrl: '/assets/images/hardwares/MonitorsCPU.jpeg',
+        imageUrl: '/assets/images/hardwares/Monitors.jpeg',
     },
     {
         id: 7,
@@ -331,28 +331,28 @@ const WhyChooseUs = () => {
 };
 
 
-const Button =()=> {
-  return (
-    <button
-      style={{
-        display: 'block',
-        margin: '20px auto',
-        padding: '10px 20px',
-        backgroundColor: '#007BFF',
-        color: '#fff',
-        border: 'none',
-        borderRadius: '5px',
-        cursor: 'pointer',
-        fontSize: '16px',
-        transition: 'background-color 0.3s ease',
-      }}
-      onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#0056b3')}
-      onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#007BFF')}
-    >
-      Get a Free Quote
-    </button>
-  );
-}
+// const Button =()=> {
+//   return (
+//     <button
+//       style={{
+//         display: 'block',
+//         margin: '20px auto',
+//         padding: '10px 20px',
+//         backgroundColor: '#007BFF',
+//         color: '#fff',
+//         border: 'none',
+//         borderRadius: '5px',
+//         cursor: 'pointer',
+//         fontSize: '16px',
+//         transition: 'background-color 0.3s ease',
+//       }}
+//       onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#0056b3')}
+//       onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#007BFF')}
+//     >
+//       Get a Free Quote
+//     </button>
+//   );
+// }
 
 
 
@@ -372,7 +372,7 @@ const Hardware = () => {
       <CameraGrid />
       <ProductsOffer />
       <WhyChooseUs />
-      <Button />
+      {/* <Button /> */}
       <Footer />
       {/* Other content for the service page */}
     </div>
