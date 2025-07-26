@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 const Banner = () => {
   return (
     <div style={{
-      backgroundImage: 'url("/assets/images/banners/CCTVBanner.jpeg")',
+      backgroundImage: 'url("/assets/images/banners/ComputersystemsoftwareBanner.jpeg")',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       height: '500px',
@@ -15,7 +15,7 @@ const Banner = () => {
       color: '#fff',
       textShadow: '2px 2px 4px rgba(0,0,0,0.7)',
     }}>
-      <h1 style={{fontWeight:'bolder', fontSize:'50px'}}>CCTV Services</h1>
+      <h1 style={{fontWeight:'bolder', fontSize:'50px'}}>Software Services</h1>
     </div>
   );
 };

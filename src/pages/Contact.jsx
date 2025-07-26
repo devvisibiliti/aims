@@ -1,5 +1,7 @@
 import React from 'react';
+import AppointmentForm from '../components/Appointmentform';
 import Footer from '../components/Footer';
+
 
 const Contact = () => {
     return (
@@ -101,10 +103,10 @@ const Contact = () => {
                     boxShadow: '0 2px 8px rgba(0,0,0,0.05)'
                 }}>
                     <h2 style={{padding:'40px', fontWeight:'bolder', fontSize:'25px'}}>Contact Details</h2>
-                    <p style={{padding:'20px'}}><strong>Address:</strong> 123 Main Street, City, Country</p>
-                    <p style={{padding:'20px'}}><strong>Phone:</strong> +1 234 567 890</p>
-                    <p style={{padding:'20px'}}><strong>Email:</strong> info@example.com</p>
-                    <p style={{padding:'20px'}}><strong>Working Hours:</strong> Mon - Fri, 9:00am - 6:00pm</p>
+                    <p style={{padding:'20px'}}><strong>Address:</strong> No 13, 6th Cross St, Anna Nagar, Tiruvottiyur, Chennai, Tamil Nadu 600019</p>
+                    <p style={{padding:'20px'}}><strong>Phone:</strong> +91 9884171721</p>
+                    <p style={{padding:'20px'}}><strong>Email:</strong> sales.aimstechnologies@gmail.com</p>
+                    <p style={{padding:'20px'}}><strong>Working Hours:</strong> Mon - Fri, 9:00am - 9:00pm</p>
                 </div>
             </div>
 
@@ -112,7 +114,7 @@ const Contact = () => {
             <div style={{ width: '100%', height: '400px', marginBottom: '2rem' }}>
                 <iframe
                     title="Google Map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019379322717!2d-122.41941518468154!3d37.77492977975916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c7e2e3f7b%3A0x8e8e8e8e8e8e8e8e!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1610000000000!5m2!1sen!2sus"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3884.906034766939!2d80.29866849999999!3d13.168324300000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526feb3c05f53d%3A0xb15a084d5f304efc!2sAims%20Technologies!5e0!3m2!1sen!2sin!4v1753504777690!5m2!1sen!2sin"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -120,6 +122,7 @@ const Contact = () => {
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
+                
             </div>
             <Footer />
         </div>

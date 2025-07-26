@@ -8,21 +8,24 @@ const products = {
       title: '📷 Table Top CCTV',
       description: 'Compact cameras for desk or shelf use',
       image: '/assets/images/home/cctv1.png',
-      link: '#hardwareA',
+      link: '/cctv',
+      link1:'/cctv'
     },
     {
       id: 'productB',
       title: '📡 Wireless CCTV',
       description: 'No wiring, easy to install anywhere',
       image: '/assets/images/home/cctv2.png',
-      link: '#hardwareB',
+      link: '/cctv',
+      link1:'/cctv'
     },
     {
       id: 'productC',
       title: '🌐 WiFi CCTV',
       description: 'Live view on phone via WiFi',
       image: '/assets/images/home/cctv3.png',
-      link: '#hardwareC',
+      link: '/cctv',
+      link1:'/cctv'
     },
   ],
   Networking: [
@@ -31,21 +34,25 @@ const products = {
       title: '🌐 System Networking',
       description: 'Connects servers, devices for data sharing',
       image: '/assets/images/home/Systemnetworking.jpeg',
-      link: '#softwareD',
+      link: '/networking',
+      link1:'/networking'
     },
     {
       id: 'productE',
       title: '🏢 Commercial Networking',
       description: 'Reliable network setup for business operations',
       image: '/assets/images/home/Commercialnetworking.jpeg',
-      link: '#softwareE',
+      link: '/networking',
+      link1:'/networking'
+
     },
     {
       id: 'productF',
       title: '🏠 Home-Based Networking',
       description: 'Smooth internet across all home devices',
       image: '/assets/images/home/Homebasednetworking.jpeg',
-      link: '#softwareF',
+      link: '/networking',
+      link1:'/networking'
     },
   ],
   SecuritySystems: [
@@ -54,21 +61,22 @@ const products = {
       title: '🛡️ Security System ',
       description: 'Smart protection for homes and businesses',
       image: '/assets/images/home/SecuritySystemCommercialHomeBased.jpeg',
-      link: '#servicesG',
+      link: '/security',
+      link1:'/security'
     },
     {
       id: 'productH',
       title: '🔐 Door Locks',
       description: 'Advanced keyless and smart locking systems',
       image: '/assets/images/home/DoorLocks.jpeg',
-      link: '#servicesH',
+      link: '/security',
     },
     {
       id: 'productI',
       title: '🏢 Commercial Needs',
       description: 'End-to-end safety for office premises',
       image: '/assets/images/home/Commercialneeds.jpeg',
-      link: '#servicesI',
+      link: '/security',
     },
   ],
    ElectricalWorks: [
@@ -77,21 +85,22 @@ const products = {
       title: '🏠 Residential Electrical Works ',
       description: 'Complete home wiring and appliance installation',
       image: '/assets/images/home/ResidentialElectricalWorks.jpeg',
-      link: '#servicesG',
+      link: '/electrical',
+      link1:'/electrical'
     },
     {
       id: 'productH',
       title: '🏢 Commercial Electrical Works',
       description: 'Safe electrical setup for business spaces',
       image: '/assets/images/home/CommercialElectricalWorks.jpeg',
-      link: '#servicesH',
+      link: '/electrical',
     },
     {
       id: 'productI',
       title: '🏭 Industrial Electrical Services',
       description: 'Heavy-load wiring and industrial power systems',
       image: '/assets/images/home/IndustrialElectricalServices.jpeg',
-      link: '#servicesI',
+      link: '/electrical',
     },
   ],
    ComputerHardware: [
@@ -100,21 +109,22 @@ const products = {
       title: '🧠 Motherboards ',
       description: 'Connects all components for system performance',
       image: '/assets/images/home/SecuritySystemCommercialHomeBased.jpeg',
-      link: '#servicesG',
+      link: '/hardware',
+      link1:'/hardware'
     },
     {
       id: 'productH',
       title: '⚙️ Processors (CPU)',
       description: 'Powerful multitasking with Intel or AMD',
       image: '/assets/images/home/DoorLocks.jpeg',
-      link: '#servicesH',
+      link: '/hardware',
     },
     {
       id: 'productI',
       title: '💾 RAM (Memory)',
       description: 'Boost speed for gaming and productivity',
       image: '/assets/images/home/Commercialneeds.jpeg',
-      link: '#servicesI',
+      link: '/hardware',
     },
   ],
   ComputerSoftware: [
@@ -123,21 +133,22 @@ const products = {
       title: '🖥️ Operating Systems (OS)',
       description: 'Genuine OS for Windows, Linux, Mac',
       image: '/assets/images/home/SecuritySystemCommercialHomeBased.jpeg',
-      link: '#servicesG',
+      link: '/software',
+      link1:'/software'
     },
     {
       id: 'productH',
       title: '📦 Productivity Software',
       description: 'Office tools for work, school, business',
       image: '/assets/images/home/DoorLocks.jpeg',
-      link: '#servicesH',
+      link: '/software',
     },
     {
       id: 'productI',
       title: '🛡️ Antivirus & Security Software',
       description: 'Real-time protection with licensed antivirus tools',
       image: '/assets/images/home/Commercialneeds.jpeg',
-      link: '#servicesI',
+      link: '/software',
     },
   ],
 };
@@ -176,6 +187,18 @@ const ProductTabs = () => {
           </div>
         ))}
       </div>
+
+      {/* Show only one "Learn More---" link per tab if link1 exists in any product */}
+      {products[activeTab].some(p => p.link1) && (
+        <div className="mt-6 flex justify-center">
+          <a
+            href={products[activeTab].find(p => p.link1)?.link1}
+            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 text-base"
+          >
+            Learn More
+          </a>
+        </div>
+      )}
     </div>
   );
 };

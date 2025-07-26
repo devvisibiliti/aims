@@ -84,7 +84,7 @@ const Footer = () => {
             <div className="footer-container" style={containerStyles}>
                 {/* Logo & Description */}
                 <div className="footer-section" style={sectionStyles}>
-                    <img src="/logo192.png" alt="Logo" style={{ width: 60, marginBottom: 12 }} />
+                    <img src="/assets/images/logoaims.jpg" alt="Logo" style={{ width: 100, marginBottom: 12 }} />
                     <p style={{ fontSize: 14, color: "#ccc" }}>
                         AIMSTech is dedicated to delivering innovative solutions and quality services to our clients worldwide.
                     </p>
@@ -96,7 +96,7 @@ const Footer = () => {
                     <ul style={linksListStyles}>
                         <li><a href="/" style={linkStyles}>Home</a></li>
                         <li><a href="/about" style={linkStyles}>About</a></li>
-                        <li><a href="/services" style={linkStyles}>Services</a></li>
+                        <li><a href="#" style={linkStyles}>Services</a></li>
                         <li><a href="/contact" style={linkStyles}>Contact</a></li>
                     </ul>
                 </div>
@@ -105,10 +105,10 @@ const Footer = () => {
                 <div className="footer-section" style={sectionStyles}>
                     <h4 style={{ color: "#fff", marginBottom: 12 }}>Contact Us</h4>
                     <p style={{ fontSize: 14, color: "#ccc", margin: 0 }}>
-                        123 Main Street,<br />
-                        New Delhi, India<br />
-                        Email: info@aimstech.com<br />
-                        Phone: +91 12345 67890
+                        No 13, 6th Cross St, Anna Nagar, Tiruvottiyur<br />
+                         Chennai, Tamil Nadu 600019<br />
+                        Email: sales.aimstechnologies@gmail.com<br />
+                        Phone: +91 9884171721
                     </p>
                 </div>
 
@@ -132,7 +132,7 @@ const Footer = () => {
                 </div>
             </div>
             <div style={copyrightStyles}>
-                &copy; {new Date().getFullYear()} AIMSTech. All rights reserved.
+                &copy; {new Date().getFullYear()} Visibiliti.in. All rights reserved.
             </div>
         </footer>
     );

@@ -8,7 +8,15 @@ const Header = () => {
   return (
     <header className="bg-white shadow-md fixed top-0 w-full z-50">
       <div className="container mx-auto flex justify-between items-center p-4">
-        <div className="text-2xl font-bold text-blue-600">AIIMS Technology</div>
+        {/* Logo image */}
+        <div className="flex items-center">
+          <img
+            src="/assets/images/logoaims.jpg"
+            alt="AIIMS Technology Logo"
+            className="h-20 w-auto mr-2"
+          />
+          
+        </div>
 
         {/* Desktop nav */}
         <nav className="hidden md:block px-40 py-5" >
