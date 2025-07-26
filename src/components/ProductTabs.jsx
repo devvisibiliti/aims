@@ -180,7 +180,7 @@ const ProductTabs = () => {
             <h3 className="text-xl font-semibold mb-2">{title}</h3>
             <p className="text-gray-600 mb-4 text-base">{description}</p>
             <Link
-              href={link}
+              to={link}
               className="mt-auto inline-block bg-red-600 text-white px-4 py-2 rounded hover:bg-blue-700 text-base"
             >
               Learn More
@@ -193,7 +193,7 @@ const ProductTabs = () => {
       {products[activeTab].some(p => p.link1) && (
         <div className="mt-6 flex justify-center">
           <Link
-            href={products[activeTab].find(p => p.link1)?.link1}
+            to={products[activeTab].find(p => p.link1)?.link1}
             className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 text-base"
           >
             Learn More
